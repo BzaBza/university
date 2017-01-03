@@ -18,6 +18,12 @@
     <button type="submit">search</button>
     <button onclick="location.href='/'" type="button">reset</button>
 </form>
+<style>
+form {
+  position: fixed;
+  z-index: 101;
+}
+</style>
     #foreach( $topic in $topics)
     <a href="topic/$topic.id">$topic.title</a><br>
     #end
